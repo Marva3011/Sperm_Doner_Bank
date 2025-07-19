@@ -39,10 +39,6 @@
     color: #0066cc;
     font-weight: 500;
   }
-  .tableauPlaceholder {
-    width: 100%;
-    margin-top: 1em;
-  }
   .image-container {
     text-align: center;
     margin: 1em 0;
@@ -62,11 +58,18 @@
 <main>
 
   <section>
-    <h2>דשבורד אסטרטגי</h2>
+    <h2>תמונות משפחות ותינוקות</h2>
     <div class="image-container">
-      <img src="strategic-dashboard.jpg" alt="תמונה אסטרטגית">
+      <img src="images/strategic-dashboard.jpg" alt="תמונה אסטרטגית">
+      <img src="images/managerial-dashboard.jpg" alt="תמונה ניהולית">
+      <img src="images/operational-dashboard.jpg" alt="תמונה תפעולית">
     </div>
+  </section>
+
+  <section>
+    <h2>דשבורד אסטרטגי</h2>
     <div class='tableauPlaceholder' id='viz1752927636365' style='position: relative'>
+      <noscript><a href='#'><img alt='אסטרטגי ' src='https://public.tableau.com/static/images/-_/-_17529254534570/sheet6/1_rss.png' style='border: none' /></a></noscript>
       <object class='tableauViz' style='display:none;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
         <param name='embed_code_version' value='3' />
@@ -80,10 +83,8 @@
 
   <section>
     <h2>דשבורד ניהולי</h2>
-    <div class="image-container">
-      <img src="managerial-dashboard.jpg" alt="תמונה ניהולית">
-    </div>
     <div class='tableauPlaceholder' id='viz1752928176045' style='position: relative'>
+      <noscript><a href='#'><img alt='ניהולי ' src='https://public.tableau.com/static/images/-_/-_17529255027530/sheet12/1_rss.png' style='border: none' /></a></noscript>
       <object class='tableauViz' style='display:none;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
         <param name='embed_code_version' value='3' />
@@ -97,10 +98,8 @@
 
   <section>
     <h2>דשבורד תפעולי</h2>
-    <div class="image-container">
-      <img src="operational-dashboard.jpg" alt="תמונה תפעולית">
-    </div>
     <div class='tableauPlaceholder' id='viz1752928212327' style='position: relative'>
+      <noscript><a href='#'><img alt='תפעולי ' src='https://public.tableau.com/static/images/-_/-_17529257975180/sheet19/1_rss.png' style='border: none' /></a></noscript>
       <object class='tableauViz' style='display:none;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
         <param name='embed_code_version' value='3' />
@@ -114,16 +113,15 @@
 
 </main>
 
-<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
-<script>
+<script type='text/javascript'>
   ['viz1752927636365', 'viz1752928176045', 'viz1752928212327'].forEach(function(id) {
     var divElement = document.getElementById(id);
     var vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width='100%';
-    vizElement.style.height='600px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
   });
 </script>
 
 </body>
 </html>
-

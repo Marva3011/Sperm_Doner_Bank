@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מערכת ניהול - בנק הזרע</title>
+<style>
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #0066cc;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
+  }
+  section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  section h2 {
+    margin-top: 0;
+    color: #0066cc;
+    font-weight: 500;
+  }
+  .tableauPlaceholder {
+    width: 100%;
+    margin-top: 1em;
+  }
+  .image-container {
+    text-align: center;
+    margin: 1em 0;
+  }
+  .image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  .gallery img {
+    width: 250px;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>מערכת ניהול - בנק הזרע</h1>
+</header>
+
+<main>
+
+  <section>
+    <h2>משפחות ותינוקות</h2>
+    <div class="gallery">
+      <img src="baby1.jpg" alt="תינוק מחייך">
+      <img src="couple1.jpg" alt="זוג הטרוסקסואלי עם תינוק">
+      <img src="couple2.jpg" alt="זוג חד מיני גברים עם תינוק">
+      <img src="couple3.jpg" alt="זוג חד מיני נשים עם תינוק">
+      <img src="single-mom.jpg" alt="אמא יחידנית עם תינוק">
+      <img src="single-dad.jpg" alt="אבא יחידני עם תינוק">
+    </div>
+  </section>
+
+  <section>
+    <h2>דשבורד תפעולי</h2>
+    <div class="image-container">
+      <img src="operational-dashboard.jpg" alt="תמונה תפעולית">
+    </div>
+    <div class='tableauPlaceholder' id='viz1752928212327' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='תפעולי ' src='https://public.tableau.com/static/images/-_/-_17529257975180/sheet19/1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='-_17529257975180/sheet19' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/-_/-_17529257975180/sheet19/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1752928212327');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+      else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+      else { vizElement.style.width='100%';vizElement.style.height='1577px';} 
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+
+</main>
+
+</body>
+</html>
